@@ -126,6 +126,9 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
+    - name: Install latest Rust
+      run: rustup update stable
+
     - name: Compile the firmware
       id: compile
       run: |
