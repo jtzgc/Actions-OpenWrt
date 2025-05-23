@@ -127,7 +127,7 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
 
     - name: Install latest Rust
-      run: apt install rustup
+      run: rustup update stable
 
 
     - name: Compile the firmware
